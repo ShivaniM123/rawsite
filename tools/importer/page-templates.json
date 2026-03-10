@@ -1,0 +1,139 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/"
+      ],
+      "description": "Prodesp homepage - main landing page with hero, services, news, and institutional content",
+      "blocks": [
+        {
+          "name": "hero-video",
+          "instances": [
+            "section.elementor-element-29fca9b .jet-video"
+          ]
+        },
+        {
+          "name": "columns-showcase",
+          "instances": [
+            "section.elementor-element-022a7e5 > .elementor-container",
+            "section.elementor-element-1351002 > .elementor-container",
+            "section.elementor-element-06386f9 > .elementor-container",
+            "section.elementor-element-b0959dd > .elementor-container",
+            "section.elementor-element-e0e7ee2 > .elementor-container",
+            "section.elementor-element-463e9ae > .elementor-container"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            "section.elementor-element-0a91720 .jet-posts"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Logo",
+          "selector": "section.elementor-element-c18d8a1",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-c18d8a1 .elementor-image img"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Hero Video",
+          "selector": "section.elementor-element-29fca9b",
+          "style": "dark",
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Soluções",
+          "selector": "section.elementor-element-022a7e5",
+          "style": "purple-gradient",
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Poupatempo",
+          "selector": "section.elementor-element-1351002",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Diário Oficial",
+          "selector": "section.elementor-element-06386f9",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Certificado Digital",
+          "selector": "section.elementor-element-b0959dd",
+          "style": "purple-gradient",
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Notícias Header",
+          "selector": "section.elementor-element-e9e6d13",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-06a1cba h2",
+            ".elementor-element-8f16c26 a"
+          ]
+        },
+        {
+          "id": "section-8",
+          "name": "Podcast Media",
+          "selector": "section.elementor-element-e0e7ee2",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "News Grid",
+          "selector": "section.elementor-element-0a91720",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-10",
+          "name": "Certifications",
+          "selector": "section.elementor-element-463e9ae",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}

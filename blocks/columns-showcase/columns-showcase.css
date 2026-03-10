@@ -1,0 +1,114 @@
+.columns-showcase > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.columns-showcase > div > div {
+  order: 1;
+}
+
+.columns-showcase > div > .columns-showcase-img-col {
+  order: 0;
+}
+
+.columns-showcase img {
+  width: 100%;
+  height: auto;
+}
+
+.columns-showcase > div > .columns-showcase-img-col img {
+  display: block;
+  border-radius: 8px;
+}
+
+.columns-showcase h2 {
+  margin-top: 0;
+}
+
+.columns-showcase h3 {
+  margin-top: 0;
+}
+
+.columns-showcase p {
+  line-height: 1.6;
+}
+
+.columns-showcase a.button:any-link {
+  margin-top: 12px;
+}
+
+/* Video links in columns */
+.columns-showcase a[href$=".mp4"]:any-link {
+  display: block;
+  position: relative;
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.columns-showcase a[href$=".mp4"]:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+@media (width >= 900px) {
+  .columns-showcase > div {
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .columns-showcase > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
+/* Certifications row - multi-column images */
+.columns-showcase.columns-showcase-4-cols > div {
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.columns-showcase.columns-showcase-4-cols > div > div {
+  flex: 0 1 120px;
+  text-align: center;
+}
+
+.columns-showcase.columns-showcase-4-cols > div > div img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.85;
+  transition: opacity var(--transition-base);
+}
+
+.columns-showcase.columns-showcase-4-cols > div > div img:hover {
+  opacity: 1;
+}
+
+/* Styles inherited from purple-gradient section */
+.purple-gradient .columns-showcase h2,
+.purple-gradient .columns-showcase h3 {
+  color: var(--white);
+}
+
+.purple-gradient .columns-showcase p {
+  color: rgb(255 255 255 / 90%);
+}
+
+.purple-gradient .columns-showcase a.button:any-link {
+  border-color: var(--white);
+  background-color: var(--white);
+  color: var(--accent-color);
+}
+
+.purple-gradient .columns-showcase a.button:hover {
+  background-color: rgb(255 255 255 / 90%);
+}

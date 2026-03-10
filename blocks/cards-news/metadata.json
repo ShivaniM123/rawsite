@@ -1,0 +1,40 @@
+{
+  "variantName": "cards-news",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-10T07:25:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.prodesp.sp.gov.br/",
+    "originPage": "Prodesp homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "news-grid",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + title + link",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "news article listings",
+      "blog post grids",
+      "press release archives",
+      "content with image thumbnails and headlines"
+    ],
+    "notSuitableFor": [
+      "product cards with descriptions and CTAs",
+      "team member profiles",
+      "feature cards without images"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T07:25:00.000Z"
+  }
+}

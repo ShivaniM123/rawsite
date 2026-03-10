@@ -1,0 +1,75 @@
+.hero-video-container .hero-video-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-video {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a2e;
+  overflow: hidden;
+}
+
+.hero-video > div {
+  text-align: center;
+  padding: 40px 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-video h1,
+.hero-video h2,
+.hero-video h3,
+.hero-video h4,
+.hero-video h5,
+.hero-video h6,
+.hero-video p {
+  color: var(--white);
+}
+
+.hero-video a:any-link {
+  color: var(--white);
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 32px;
+  border: 2px solid var(--white);
+  border-radius: 30px;
+  transition: all var(--transition-base);
+  text-decoration: none;
+}
+
+.hero-video a:hover {
+  background-color: var(--white);
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.hero-video picture {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+}
+
+.hero-video img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (width >= 900px) {
+  .hero-video {
+    min-height: 500px;
+  }
+
+  .hero-video > div {
+    padding: 60px 32px;
+  }
+}
