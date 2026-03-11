@@ -9,23 +9,22 @@
  * Generated: 2026-03-10
  */
 export default function parse(element, { document }) {
-  // From source DOM: .jet-posts__item contains each card
-  const items = element.querySelectorAll('.jet-posts__item');
+  // Support two source DOM patterns:
+  // 1. Homepage: .jet-posts__item (Elementor JetEngine posts)
+  // 2. News sidebar: .rpwe-li (Recent Posts Widget Extended)
+  const items = element.querySelectorAll('.jet-posts__item, .rpwe-li');
 
   const cells = [];
 
   items.forEach((item) => {
     // Column 1: Image
-    // From source DOM: .jet-posts__inner-box > img, or .jet-posts__thumb img
-    const img = item.querySelector('.jet-posts__inner-box > img, .jet-posts__thumb img, img');
+    const img = item.querySelector('.jet-posts__inner-box > img, .jet-posts__thumb img, .rpwe-thumb, img');
 
     // Column 2: Text content (title + optional description)
-    // From source DOM: .jet-posts__inner-content h4.entry-title a
-    const titleEl = item.querySelector('h4.entry-title a, .entry-title a, h4 a, h3 a');
+    const titleEl = item.querySelector('h4.entry-title a, .entry-title a, .rpwe-title a, h4 a, h3 a');
 
     const textContent = [];
     if (titleEl) {
-      // Create a proper heading element with the link
       const heading = document.createElement('h4');
       const link = document.createElement('a');
       link.href = titleEl.href || titleEl.getAttribute('href') || '';
@@ -35,7 +34,6 @@ export default function parse(element, { document }) {
     }
 
     // Add description if present
-    // From source DOM: .jet-posts__inner-content p, .jet-posts__excerpt
     const desc = item.querySelector('.jet-posts__inner-content p, .jet-posts__excerpt');
     if (desc && desc.textContent.trim()) {
       textContent.push(desc);

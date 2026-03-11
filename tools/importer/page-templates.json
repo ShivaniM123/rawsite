@@ -185,6 +185,48 @@
           ]
         }
       ]
+    },
+    {
+      "name": "news-article",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/edital-de-ate-r-15-milhoes-leva-startups-a-desenvolver-solucoes-para-desafios-reais-do-governo-de-sao-paulo"
+      ],
+      "description": "News article page with article content (title, date, featured image, body) and latest news sidebar",
+      "blocks": [
+        {
+          "name": "cards-news",
+          "instances": [
+            "aside#secondary .rpwe-ul"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Article Content",
+          "selector": "article#post-21678",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "h1.entry-title",
+            ".entry-header > p",
+            "figure.post-thumbnail img",
+            ".entry-content > p"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Latest News Sidebar",
+          "selector": "aside#secondary .rpwe_widget",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": [
+            "h4.widget-title"
+          ]
+        }
+      ]
     }
   ]
 }

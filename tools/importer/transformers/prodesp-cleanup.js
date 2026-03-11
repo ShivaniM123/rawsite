@@ -19,6 +19,10 @@ export default function transform(hookName, element, payload) {
       '#topo-oficial',
       '.dpNoneMobile',
       '.jet-sticky-section',
+      // Skip-to-content link
+      'a.skip-link',
+      // Cookie consent banner
+      '#cookie-notice',
     ]);
   }
 
@@ -38,6 +42,11 @@ export default function transform(hookName, element, payload) {
       '#rodape-menu-eleicoes',
       '.page-header',
       '.elementor-widget-spacer',
+      // News article: post metadata, author bio, post navigation
+      '.entry-meta',
+      '.entry-footer',
+      '.post-author-bio',
+      'nav.post-navigation',
       'iframe',
       'link',
       'noscript',

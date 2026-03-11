@@ -439,3 +439,28 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+
+/* Article + sidebar two-column layout */
+@media (width >= 900px) {
+  main:has(> .section.cards-news-container) {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 0 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  main:has(> .section.cards-news-container) > .section {
+    padding: 40px 0;
+  }
+
+  main:has(> .section.cards-news-container) > .section > div {
+    padding: 0;
+    max-width: none;
+  }
+
+  main:has(> .section.cards-news-container) > .section.cards-news-container {
+    padding-top: 0;
+  }
+}
