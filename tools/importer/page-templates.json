@@ -134,6 +134,57 @@
           "defaultContent": []
         }
       ]
+    },
+    {
+      "name": "institutional-page",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/institucional/certificacoes"
+      ],
+      "description": "Institutional content page for Prodesp certifications, awards, and organizational information",
+      "blocks": [],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": "section.elementor-element-cf8b35b",
+          "style": "purple-gradient",
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-cf8b35b h1"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Main Content",
+          "selector": "section.elementor-element-3987062",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".jet-breadcrumbs",
+            ".elementor-element-0ab498f .elementor-text-editor"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Infographic Image",
+          "selector": "section.elementor-element-19d5e73",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-f4af0a3 img"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Tetrahedron Diagram",
+          "selector": "section.elementor-element-bfda84f",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-abdf7e3 img"
+          ]
+        }
+      ]
     }
   ]
 }
