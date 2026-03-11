@@ -1,20 +1,242 @@
+/* Footer — matches original Prodesp footer across all viewports */
+
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5d5c5e;
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+footer .footer {
+  visibility: hidden;
+}
+
+footer .footer[data-block-status="loaded"] {
+  visibility: visible;
 }
 
 footer .footer p {
-  margin: 0;
+  margin: 0 0 4px;
 }
 
+/* ------------------------------------------------------------------ */
+
+/* Section 1 — Link columns (bg: #e4e4e4)                            */
+
+/* ------------------------------------------------------------------ */
+footer .footer > div > .section:first-child {
+  background-color: #e4e4e4;
+  padding: 40px 24px;
+}
+
+/* Column headings */
+footer .footer h4 {
+  color: #5d5c5e;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+/* Link lists */
+footer .footer ul {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+footer .footer li {
+  margin: 0;
+  padding: 2px 0;
+}
+
+footer .footer a:any-link {
+  color: #5d5c5e;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+footer .footer a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Social icons row */
+footer .footer .footer-social {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+footer .footer .footer-social a:any-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5d5c5e;
+}
+
+footer .footer .footer-social .icon {
+  width: 36px;
+  height: 36px;
+}
+
+footer .footer .footer-social .icon img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0) saturate(100%) invert(38%) sepia(3%) saturate(456%) hue-rotate(252deg) brightness(95%) contrast(86%);
+}
+
+/* Bold standalone links (Soluções, Diário Oficial, etc.) in column 3 */
+footer .footer > div > .section:first-child > div > div > p > a {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* "Fale Conosco" bold link above social */
+footer .footer > div > .section:first-child > div:last-child p:not(.footer-social) > a {
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* Mobile: single column, stacked */
+footer .footer > div > .section:first-child > div {
+  margin-bottom: 24px;
+}
+
+footer .footer > div > .section:first-child > div:last-child {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Section 2 — Gov buttons + government logo                         */
+
+/* ------------------------------------------------------------------ */
+footer .footer > div > .section:last-child {
+  background-color: #f6f6f6;
+  padding: 40px 24px 0;
+}
+
+/* Gov pill buttons */
+footer .footer > div > .section:last-child a.button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: #243e63;
+  border-color: #243e63;
+  color: #fff;
+  border-radius: 20px;
+  padding: 4px 35px;
+  font-size: 16px;
+  font-weight: 300;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+footer .footer > div > .section:last-child a.button:hover {
+  background-color: #1a2e4a;
+  border-color: #1a2e4a;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Government logo — dark bar */
+footer .footer > div > .section:last-child > .default-content-wrapper > p:last-child {
+  background-color: #000;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 40px 0 0;
+  padding: 24px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer > div > .section:last-child > .default-content-wrapper > p:last-child a {
+  display: inline-block;
+}
+
+footer .footer > div > .section:last-child > .default-content-wrapper > p:last-child img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Tablet (768px+): 5-column grid, buttons still stacked             */
+
+/* ------------------------------------------------------------------ */
+@media (width >= 768px) {
+  footer .footer > div > .section:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 24px;
+  }
+
+  footer .footer > div > .section:first-child > div {
+    flex: 1 1 0;
+    min-width: 0;
+    margin-bottom: 0;
+    padding: 0 8px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+
+/* Desktop (900px+): refine spacing + buttons row                     */
+
+/* ------------------------------------------------------------------ */
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer .footer > div > .section:first-child {
+    padding: 40px max(32px, calc(50% - 595px));
+  }
+
+  footer .footer > div > .section:first-child > div {
+    padding: 0 12px;
+  }
+
+  footer .footer > div > .section:last-child {
+    padding: 40px max(32px, calc(50% - 595px)) 0;
+  }
+
+  /* Gov buttons — horizontal row */
+  footer .footer > div > .section:last-child > .default-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  footer .footer > div > .section:last-child > .default-content-wrapper > p {
+    flex: 1 1 180px;
+    max-width: 300px;
+    margin: 0;
+  }
+
+  footer .footer > div > .section:last-child a.button {
+    margin-bottom: 0;
+  }
+
+  /* Gov logo — full width at bottom */
+  footer .footer > div > .section:last-child > .default-content-wrapper > p:last-child {
+    flex: 0 0 100%;
+    max-width: none;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 40px 0 0;
+    box-sizing: border-box;
+  }
+
+  footer .footer > div > .section:last-child > .default-content-wrapper > p:last-child img {
+    max-width: 200px;
   }
 }
