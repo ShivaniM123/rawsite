@@ -15,19 +15,20 @@
   --background-color: #fff;
   --light-color: #f6f6f6;
   --dark-color: #212529;
-  --text-color: #464646;
+  --text-color: #212529;
   --text-color-dark: #212529;
   --link-color: #500878;
   --link-hover-color: #3a0556;
   --accent-color: #500878;
   --accent-color-light: #7b2ea0;
+  --accent-cyan: #74d2e7;
   --white: #fff;
   --footer-bg: #e4e4e4;
   --footer-bg-alt: #f6f6f6;
   --footer-link-color: #5d5c5e;
 
-  /* fonts */
-  --body-font-family: 'Open Sans', 'open-sans-fallback', sans-serif;
+  /* fonts - original site uses Work Sans everywhere */
+  --body-font-family: 'Work Sans', 'work-sans-fallback', sans-serif;
   --heading-font-family: 'Work Sans', 'work-sans-fallback', sans-serif;
   --nav-font-family: 'Work Sans', 'work-sans-fallback', sans-serif;
 
@@ -35,11 +36,12 @@
   --body-font-size-m: 16px;
   --body-font-size-s: 14px;
   --body-font-size-xs: 12px;
+  --body-font-size-l: 18px;
 
   /* heading sizes */
-  --heading-font-size-xxl: 36px;
-  --heading-font-size-xl: 28px;
-  --heading-font-size-l: 23px;
+  --heading-font-size-xxl: 40px;
+  --heading-font-size-xl: 34px;
+  --heading-font-size-l: 27px;
   --heading-font-size-m: 20px;
   --heading-font-size-s: 18px;
   --heading-font-size-xs: 16px;
@@ -67,11 +69,8 @@
 @media (width >= 900px) {
   :root {
     --heading-font-size-xxl: 40px;
-    --heading-font-size-xl: 29px;
-    --heading-font-size-l: 23px;
-    --heading-font-size-m: 20px;
-    --heading-font-size-s: 18px;
-    --heading-font-size-xs: 16px;
+    --heading-font-size-xl: 34px;
+    --heading-font-size-l: 27px;
   }
 }
 
@@ -83,6 +82,7 @@ body {
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.5;
+  font-weight: 400;
 }
 
 body.appear {
@@ -113,7 +113,7 @@ h6 {
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1;
   scroll-margin: 40px;
   color: var(--accent-color);
 }
@@ -136,8 +136,9 @@ ol,
 ul,
 pre,
 blockquote {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
+  margin-top: 0;
+  margin-bottom: 28px;
+  line-height: 1.84;
 }
 
 code,

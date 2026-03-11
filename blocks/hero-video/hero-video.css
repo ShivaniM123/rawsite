@@ -7,61 +7,82 @@
   position: relative;
   min-height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #1a1a2e;
   overflow: hidden;
 }
 
-.hero-video > div {
-  text-align: center;
-  padding: 40px 24px;
+.hero-video video {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
 }
 
-.hero-video h1,
-.hero-video h2,
-.hero-video h3,
-.hero-video h4,
-.hero-video h5,
-.hero-video h6,
-.hero-video p {
-  color: var(--white);
+.hero-video-overlay {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 60px 24px;
+  width: 100%;
+  min-height: 400px;
+  cursor: pointer;
+  background: rgb(26 26 46 / 50%);
+  transition: background var(--transition-base);
 }
 
-.hero-video a:any-link {
+.hero-video-play {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 80px;
+  height: 80px;
+  transition: transform var(--transition-base);
+}
+
+.hero-video-play:hover {
+  transform: scale(1.1);
+}
+
+.hero-video-play svg {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-video-cta {
   color: var(--white);
   font-family: var(--heading-font-family);
   font-weight: 600;
   font-size: 18px;
   text-transform: uppercase;
-  display: inline-block;
-  padding: 12px 32px;
+  letter-spacing: 0.5px;
+  margin: 0;
+  padding: 10px 28px;
   border: 2px solid var(--white);
   border-radius: 30px;
-  transition: all var(--transition-base);
-  text-decoration: none;
 }
 
-.hero-video a:hover {
-  background-color: var(--white);
-  color: var(--accent-color);
-  text-decoration: none;
+.hero-video-overlay.playing {
+  background: rgb(26 26 46 / 10%);
 }
 
-.hero-video picture {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
+.hero-video-overlay.playing .hero-video-play,
+.hero-video-overlay.playing .hero-video-cta {
+  opacity: 0;
+  transition: opacity var(--transition-base);
 }
 
-.hero-video img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.hero-video-overlay:hover.playing .hero-video-play,
+.hero-video-overlay:hover.playing .hero-video-cta {
+  opacity: 1;
 }
 
 @media (width >= 900px) {
@@ -69,7 +90,13 @@
     min-height: 500px;
   }
 
-  .hero-video > div {
-    padding: 60px 32px;
+  .hero-video-overlay {
+    min-height: 500px;
+    padding: 80px 32px;
+  }
+
+  .hero-video-play {
+    width: 100px;
+    height: 100px;
   }
 }
