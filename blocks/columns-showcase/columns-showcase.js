@@ -80,6 +80,11 @@ export default function decorate(block) {
           addScrollZoom(picWrapper);
         }
       }
+
+      // Hide empty columns (no text, no images, no links)
+      if (!col.textContent.trim() && !col.querySelector('img, picture, video, a')) {
+        col.classList.add('columns-showcase-empty');
+      }
     });
   });
 }

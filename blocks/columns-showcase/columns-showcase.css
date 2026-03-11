@@ -34,6 +34,11 @@
   border-radius: 8px;
 }
 
+/* Hide empty columns so text fills full width */
+.columns-showcase > div > .columns-showcase-empty {
+  display: none;
+}
+
 .columns-showcase h2 {
   margin-top: 0;
 }
