@@ -1,0 +1,62 @@
+{
+  "templates": [
+    {
+      "name": "content-page",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/transparencia/dados-abertos",
+        "https://www.prodesp.sp.gov.br/institucional/missao-visao-e-valores",
+        "https://www.prodesp.sp.gov.br/transparencia/carta-de-servicos-ao-usuario",
+        "https://www.prodesp.sp.gov.br/transparencia/demonstracoes-financeiras"
+      ],
+      "description": "Standard content page with hero banner, breadcrumb, and single-column content area for text, documents, and CTAs",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            "section.elementor-element-6e2d2fe"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": "section.elementor-element-6e2d2fe",
+          "style": "dark-purple",
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": [
+            "h1.page-title"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Breadcrumb",
+          "selector": "section.elementor-element-5ffff5d",
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Main Content",
+          "selector": "section.elementor-element-8dea8a1",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-61409e0 .elementor-text-editor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "section-landing",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/institucional"
+      ],
+      "description": "Section landing page with hero banner, breadcrumb, and structured navigation link directory serving as section index",
+      "blocks": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "url": "https://www.prodesp.sp.gov.br/transparencia/dados-abertos",
+  "path": "transparencia/dados-abertos",
+  "timestamp": "2026-03-11T18:07:32.948Z",
+  "title": "Dados Abertos - Prodesp - Site da empresa de TI do estado de São Paulo",
+  "template": "content-page",
+  "blocks": [
+    "hero"
+  ]
+}
