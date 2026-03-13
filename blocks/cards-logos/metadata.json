@@ -1,0 +1,8 @@
+{
+  "variantName": "cards-logos",
+  "baseBlock": "cards",
+  "description": "Logo grid variant of cards block. Displays company logos in circular grey containers in a responsive 4-column grid layout.",
+  "createdFor": "https://solucoes.prodesp.sp.gov.br/acordos/",
+  "createdDate": "2026-03-13",
+  "usedOn": ["https://solucoes.prodesp.sp.gov.br/acordos/"]
+}

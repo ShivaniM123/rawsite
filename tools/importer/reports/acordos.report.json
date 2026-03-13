@@ -1,0 +1,13 @@
+{
+  "status": "success",
+  "url": "https://solucoes.prodesp.sp.gov.br/acordos/",
+  "path": "acordos",
+  "timestamp": "2026-03-13T09:49:06.028Z",
+  "title": "Acordos - Soluções Prodesp",
+  "template": "acordos-page",
+  "blocks": [
+    "columns",
+    "cards",
+    "cards-logos"
+  ]
+}

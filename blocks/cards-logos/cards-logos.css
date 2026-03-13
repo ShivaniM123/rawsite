@@ -1,0 +1,53 @@
+.cards-logos > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cards-logos > ul > li {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20%;
+}
+
+.cards-logos .cards-logos-card-image {
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-logos .cards-logos-card-body {
+  display: none;
+}
+
+.cards-logos > ul > li img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.cards-logos > ul > li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (width >= 600px) {
+  .cards-logos > ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-logos > ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

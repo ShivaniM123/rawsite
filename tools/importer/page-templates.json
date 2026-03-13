@@ -1,0 +1,70 @@
+{
+  "templates": [
+    {
+      "name": "acordos-page",
+      "urls": [
+        "https://solucoes.prodesp.sp.gov.br/acordos/"
+      ],
+      "description": "Agreements/partnerships landing page on the Prodesp solutions portal",
+      "blocks": [
+        {
+          "name": "columns",
+          "instances": [
+            "section.elementor-element-6552a544"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            "section.elementor-element-11d2837b"
+          ]
+        },
+        {
+          "name": "cards-logos",
+          "instances": [
+            "section.elementor-element-54da4523"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-hero",
+          "name": "Hero / Intro",
+          "selector": "section.elementor-element-1aebf83",
+          "style": null,
+          "blocks": [
+            "columns"
+          ],
+          "defaultContent": [
+            ".elementor-element-3cafce9f h2"
+          ]
+        },
+        {
+          "id": "section-benefits",
+          "name": "Benefits / Value Props",
+          "selector": "section.elementor-element-6785598a",
+          "style": "dark",
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-companies",
+          "name": "Companies Section",
+          "selector": [
+            "section.elementor-element-2a2a10e",
+            "section.elementor-element-54da4523"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-logos"
+          ],
+          "defaultContent": [
+            ".elementor-element-132d1563 h2"
+          ]
+        }
+      ]
+    }
+  ]
+}
