@@ -1,0 +1,232 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/"
+      ],
+      "description": "Prodesp homepage - main landing page with hero, services, news, and institutional content",
+      "blocks": [
+        {
+          "name": "hero-video",
+          "instances": [
+            "section.elementor-element-29fca9b .jet-video"
+          ]
+        },
+        {
+          "name": "columns-showcase",
+          "instances": [
+            "section.elementor-element-022a7e5 > .elementor-container",
+            "section.elementor-element-1351002 > .elementor-container",
+            "section.elementor-element-06386f9 > .elementor-container",
+            "section.elementor-element-b0959dd > .elementor-container",
+            "section.elementor-element-e0e7ee2 > .elementor-container",
+            "section.elementor-element-463e9ae > .elementor-container"
+          ]
+        },
+        {
+          "name": "cards-news",
+          "instances": [
+            "section.elementor-element-0a91720 .jet-posts"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Logo",
+          "selector": "section.elementor-element-c18d8a1",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-c18d8a1 .elementor-image img"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Hero Video",
+          "selector": "section.elementor-element-29fca9b",
+          "style": "dark",
+          "blocks": [
+            "hero-video"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3",
+          "name": "Soluções",
+          "selector": "section.elementor-element-022a7e5",
+          "style": "purple-gradient",
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4",
+          "name": "Poupatempo",
+          "selector": "section.elementor-element-1351002",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Diário Oficial",
+          "selector": "section.elementor-element-06386f9",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-6",
+          "name": "Certificado Digital",
+          "selector": "section.elementor-element-b0959dd",
+          "style": "purple-gradient",
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-7",
+          "name": "Notícias Header",
+          "selector": "section.elementor-element-e9e6d13",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-06a1cba h2",
+            ".elementor-element-8f16c26 a"
+          ]
+        },
+        {
+          "id": "section-8",
+          "name": "Podcast Media",
+          "selector": "section.elementor-element-e0e7ee2",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9",
+          "name": "News Grid",
+          "selector": "section.elementor-element-0a91720",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-10",
+          "name": "Certifications",
+          "selector": "section.elementor-element-463e9ae",
+          "style": null,
+          "blocks": [
+            "columns-showcase"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "institutional-page",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/institucional/certificacoes"
+      ],
+      "description": "Institutional content page for Prodesp certifications, awards, and organizational information",
+      "blocks": [],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero Banner",
+          "selector": "section.elementor-element-cf8b35b",
+          "style": "purple-gradient",
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-cf8b35b h1"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Main Content",
+          "selector": "section.elementor-element-3987062",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".jet-breadcrumbs",
+            ".elementor-element-0ab498f .elementor-text-editor"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Infographic Image",
+          "selector": "section.elementor-element-19d5e73",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-f4af0a3 img"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Tetrahedron Diagram",
+          "selector": "section.elementor-element-bfda84f",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            ".elementor-element-abdf7e3 img"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "news-article",
+      "urls": [
+        "https://www.prodesp.sp.gov.br/edital-de-ate-r-15-milhoes-leva-startups-a-desenvolver-solucoes-para-desafios-reais-do-governo-de-sao-paulo"
+      ],
+      "description": "News article page with article content (title, date, featured image, body) and latest news sidebar",
+      "blocks": [
+        {
+          "name": "cards-news",
+          "instances": [
+            "aside#secondary .rpwe-ul"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Article Content",
+          "selector": "article#post-21678",
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "h1.entry-title",
+            ".entry-header > p",
+            "figure.post-thumbnail img",
+            ".entry-content > p"
+          ]
+        },
+        {
+          "id": "section-2",
+          "name": "Latest News Sidebar",
+          "selector": "aside#secondary .rpwe_widget",
+          "style": null,
+          "blocks": [
+            "cards-news"
+          ],
+          "defaultContent": [
+            "h4.widget-title"
+          ]
+        }
+      ]
+    }
+  ]
+}

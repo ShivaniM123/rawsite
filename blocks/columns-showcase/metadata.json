@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-showcase",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-10T07:25:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.prodesp.sp.gov.br/",
+    "originPage": "Prodesp homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "mixed",
+    "density": "spacious",
+    "purpose": "service-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + paragraph + CTA link + image",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "service/product highlight sections",
+      "two-column image + text layouts",
+      "institutional content with images and descriptions",
+      "alternating image-left/image-right layouts"
+    ],
+    "notSuitableFor": [
+      "multi-column grid layouts (3+ columns)",
+      "text-only column layouts",
+      "comparison tables"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T07:25:00.000Z"
+  }
+}

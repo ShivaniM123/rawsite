@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "url": "https://www.prodesp.sp.gov.br/",
+  "path": "index",
+  "timestamp": "2026-03-10T07:35:36.980Z",
+  "title": "Prodesp - Site da empresa de TI do estado de São Paulo",
+  "template": "homepage",
+  "blocks": [
+    "hero-video",
+    "columns-showcase",
+    "columns-showcase",
+    "columns-showcase",
+    "columns-showcase",
+    "columns-showcase",
+    "columns-showcase",
+    "cards-news"
+  ]
+}

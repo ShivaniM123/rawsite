@@ -1,0 +1,39 @@
+{
+  "variantName": "hero-video",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-03-10T07:25:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.prodesp.sp.gov.br/",
+    "originPage": "Prodesp homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "wide",
+    "purpose": "video-hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "video + overlay image + play button",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "pages with video hero banners",
+      "landing pages with video backgrounds",
+      "institutional homepages with promotional video"
+    ],
+    "notSuitableFor": [
+      "text-only hero sections",
+      "hero sections with static images only",
+      "minimal hero with just heading and CTA"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T07:25:00.000Z"
+  }
+}
